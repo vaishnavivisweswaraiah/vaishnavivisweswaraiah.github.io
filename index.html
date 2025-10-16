@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishnavi Visweswaraiah — AI & Data Engineering Consultant</title>
+  <meta name="description" content="Palantir, Data Engineering, Machine Learning, and GenAI consulting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="logo">VV</span>
+        <a href="#top" class="brand-name">Vaishnavi Visweswaraiah</a>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#" class="btn primary" id="openModalBtn">Work with me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <h1>  AI & Data Engineering Consultant</h1>
+      <p class="lead">I'm Vaishnavi Visweswaraiah — I have <strong>over 10 years of experience</strong> in the tech industry, working as a <strong>Data Engineer</strong>, <strong>Machine Learning Engineer</strong>, and <strong>Software Developer</strong>. I’ve built solutions from machine learning models and cloud-based AI systems to large-scale data pipelines using <strong>Python</strong>, <strong>PySpark</strong>, <strong>AWS</strong>, <strong>Palantir</strong>, and <strong>Databricks</strong>.</p>
+      <ul class="badges">
+        <li>Databricks</li>
+        <li>Pyspark</li>
+        <li>SQL</li>
+        <li>Palantir Foundry</li>
+        <li>Snowflake</li>
+        <li>LLM / RAG (LangChain)/Agents</li>
+        <li>AWS</li>
+        <li> Software Engineering</li>
+        <li> Research</li>
+      </ul>
+    </section>
+
+    <section id="services" class="section container">
+  <h2>Services</h2>
+
+  <div class="grid-2">
+
+    <!-- Palantir Foundry -->
+    <div class="card">
+      <h3>Palantir Foundry / Data Platforms</h3>
+      <ul>
+        <li>Ontology design: entities, relationships, automations</li>
+        <li>Workshops: discovery, requirements, solution design</li>
+        <li>Pipeline Builder data flows (batch time)</li>
+        <li>Code Repositories & Code Workbooks for versioned pipelines</li>
+        <li>Apps: Vertex/Slate, AIP Intergation (AIP logic, Agents, Evaluations) </li>
+      </ul>
+    </div>
+
+    <!-- Databricks & Data Engineering -->
+    <div class="card">
+      <h3>Databricks Data Engineering (AWS/AZURE)</h3>
+      <ul>
+        <li>ETL/ELT with PySpark & Delta Lake (bronze/silver/gold).</li>
+        <li>Airflow / Databricks Workflows orchestration.</li>
+        <li>Quality, lineage, tests; cost & performance tuning.</li>
+        <li>Snowflake/warehouse integrations.</li>
+      </ul>
+    </div>
+
+    <!-- GenAI / LLM Evaluation (no deployment) -->
+    <div class="card">
+      <h3>GenAI / LLM Application Evaluation</h3>
+      <ul>
+        <li> Gen AI applications (RAG, Vector DB, Prompt Engineering, Agent based flows).</li>
+        <li>Task design & test-set curation for your use case.</li>
+        <li>Similarity & lexical metrics: <strong>cosine similarity</strong>, <strong>BLEU</strong>, <strong>ROUGE/ROUGE-L.</strong></li>
+        <li>Relevancy / truthfulness checks; hallucination mitigation.</li>
+        <li><strong>LLM-as-Evaluator</strong> with clear rubrics & prompts.</li>
+        <li>Human-in-the-loop reviews; error analysis.</li>
+        <li>Prompt/version management; simple scorecards & reports.</li>
+        <li> Topic modeling on user prompts.</li>
+      </ul>
+    </div>
+
+    <!-- Classical ML + Reporting -->
+    <div class="card">
+      <h3>Machine Learning: Research & Analysis</h3>
+      <ul>
+        <li><strong>Lifecycle:</strong> data collection → exploration → model building → reporting findings.</li>
+        <li>Classification/regression pipelines; feature engineering; Hyperparameter tuning; Crossvalidation, Sampling, Data processing.</li>
+        <li>Metrics: <strong>F1</strong>, precision/recall, ROC-AUC,Confusion Matrix RMSE,MSE.</li>
+        <li>Readable reports, notebooks, and stakeholder summaries.</li>
+      </ul>
+    </div>
+
+    <!-- Training / Enablement -->
+    <div class="card">
+    <h3>Training &amp; Enablement</h3>
+    <p class="muted small">Intro → Practical.</p>
+    <ul>
+      <li><strong>Python Basics (Intro)</strong> — zero-to-scripts: data types, loops, files, and quick automations</li>
+      <li><strong>Data Engineering 101</strong> — how pipelines work (ETL/ELT), quality checks, and simple orchestration</li>
+      <li><strong>Machine Learning Foundations</strong> — problem framing, features, and the model lifecycle in plain English</li>
+      <li><strong>Model Evaluation Made Simple</strong> — F1, precision/recall, and “what good looks like” without math overload</li>
+      <li><strong>GenAI &amp; RAG: An Introduction</strong> — what RAG is, when to use it, and how to judge answers (truthfulness &amp; relevance)</li>
+    </ul>
+  </div>
+
+
+  </div>
+</section>
+
+
+    <section id="projects" class="section container">
+      <h2>Hobby Projects</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>PlanFinder AI — Health Insurance Rate Finder Agent</h3>
+          <p>Streamlit conversational app for plan comparison; LLM extraction + structured summaries.</p>
+          <a href="https://github.com/vaishnavivisweswaraiah/genai-healthinsurance-rate-finder-agent" target="_blank" rel="noopener">GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>SQLGen — Text-to-SQL leveraging Databricks</h3>
+          <p>Generates SQL from natural language with schema visualization to help help Product Managers, Business Stakeholders, and intermediate coders interact with SQL databases.</p>
+          <a href="https://github.com/vaishnavivisweswaraiah/text2sql_gen_ai_application" target="_blank" rel="noopener">GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Health Insurance Rate Data Engineering Pipeline</h3>
+          <p>modular, production-grade data engineering pipeline to ingest, transform, and enrich U.S. health insurance rate data using Spark and Python.</p>
+          <a href="https://github.com/vaishnavivisweswaraiah/text2sql_gen_ai_application" target="_blank" rel="noopener">GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Hi, I’m Vaishnavi</h3>
+          <div class="about">
+            <p>
+              My expertise spans cloud computing, AI/ML, Generative AI (GenAI), and large language models (LLMs). 
+              I help companies improve data systems, automate workflows, and gain business insights through 
+              data-driven solutions across healthcare, retail, and public services—delivering end-to-end data and 
+              AI engineering using Databricks, AWS and Palantir foundry. 
+            </p>
+
+            <p>
+              <strong>Unique strength:</strong> I implement data science algorithms <strong>from scratch</strong>—including 
+              <em>Logistic Regression, Linear Regression, Neural Network</em>, and clustering such as 
+              <em>K-Means</em> and <em>Fuzzy-C</em>. This gave me a deep understanding of how algorithms function and 
+              helps me build custom solutions that meet specific client needs.
+            </p>
+
+            <p>
+              <strong>Leadership and collaboration:</strong> I have experience leading teams, mentoring engineers, and 
+              continuously learning new tools and technologies to deliver high-quality solutions.
+            </p>
+
+            <ul class="list">
+              <li><strong>Programming:</strong> Python, SQL, PySpark, Java, R</li>
+              <li><strong>LLM & GenAI:</strong> OpenAI, LangChain, Vector DB, Prompt Engineering</li>
+              <li><strong>Palantir Foundry:</strong> Pipeline Builder, Code Workbooks, Code Repositories, Ontology, 
+                  Modeling Objective, Workshop, Devops, Contour, AIP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Publications</h3>
+          <p><a href="https://www.tridhascholars.org/pdfs/nomophobia-before-and-after-the-covid-19-pandemic-can-social-media-be-used-to-understand-mobile-phone-dependency-IJCMI-4-1035.pdf" target="_blank" rel="noopener">Nomophobia Before and After COVID-19</a></p>
+          <p><a href="https://www.techtimes.com/articles/297641/20231017/deepening-our-understanding-of-artificial-intelligence-from-machine-learning-to-generative-ai-large-language-models-and-beyond.htm" target="_blank" rel="noopener">Deepening understand of AI</a></p>
+          <p><a href="https://www.sciencetimes.com/articles/46742/20231025/ai-and-mental-health-harnessing-nlp-and-ml-for-identification-understanding-and-intervention.htm" target="_blank" rel="noopener">AI and Mental Health</a></p>
+          <p><a href="https://ijcttjournal.org/2025/Volume-73/Issue-9/IJCTT-V73I9P103.pdf" target="_blank" rel="noopener">Everyday LLM </a></p>
+        
+          <h3>Awards &amp; Recognition</h3>
+        <ul class="list">
+          <li>
+            <strong>Globee Artificial Intelligence Awards (2025)</strong>
+            <div class="meta">
+              <a href="https://globeeawards.com/2025-winners-artificial-intelligence-awards/#:~:text=Vaishnavi%20Visweswaraiah%20%7C%20Beavercreek%2C%20Ohio%2C%20United%20States%20%7C%20Driving%20AI%20Innovation%20for%20Business%20Growth%20and%20Human%20Behavior%20Insights%20%7C%20%7C%20Vaishnavi%20Visweswaraiah%20%7C" target="_blank" rel="noopener">See winners</a>
+            </div>
+          </li>
+          <li>
+            <strong>International & National Achievers’ Awards at IAF(2025)</strong>
+            <div class="meta">
+              <a href="https://www.iafindia.com/category/profiles/page/3/#:~:text=A%20strong%20and%20impactful%20career%20in%20the%20technology%20sector%2C%20boasting%20over%2010%20years%20of%20experience%3A" target="_blank" rel="noopener">See Achievers</a>
+            </div>
+          </li>
+        </ul>
+        <h3>Reviewer/Judge</h3>
+        <ul class="list">
+          <li>
+            <strong>Globee Awards — Judge (2025)</strong>
+            <div class="meta">
+              <a href="https://globeeawards.com/2025-judges-artificial-intelligence/#:~:text=Vaishnavi%20Visweswaraiah" target="_blank" rel="noopener">Judges page</a>
+            </div>
+          </li>
+          <li>
+            <strong>Timmy Awards — Judge (2024)</strong>
+            <div class="meta">
+              <a href="https://techinmotion.com/timmy-awards/our-judges#:~:text=Read%20Bio-,Vaishnavi,-Visweswaraiah" target="_blank" rel="noopener">Judges page</a>
+            </div>
+          </li>
+
+          <li>
+            <strong>IEEE Computer Society Reviewer (2024)</strong>
+            <div class="meta">
+              <a href="https://www.computer.org/digital-library/magazines/co/2024-reviewer-thanks#:~:text=Vaishnavi%20Visweswaraiah" target="_blank" rel="noopener">Reviewers page</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+        <div class="card">
+          <h3>Find me online</h3>
+          <p><a href="https://www.linkedin.com/in/v-vaishnavi/" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p><a href="https://github.com/vaishnavivisweswaraiah" target="_blank" rel="noopener">GitHub</a></p>
+          <p><a href="#contact" id="openModalBtn3">Contact form </a></p>
+        </div>
+        <div class="card">
+          <h3>Resume</h3>
+          <p><a href="Vaishnavi_V_Resume.pdf" target="_blank" rel="noopener">Vaishnavi Resume(PDF)</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Vaishnavi Visweswaraiah — AI & Data Engineering Consulting</p>
+    </div>
+  </footer>
+
+  <!-- Modal Contact Form -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header>
+        <h3 id="modalTitle">Work with Vaishnavi</h3>
+        <button class="close" id="closeModalBtn" aria-label="Close">×</button>
+      </header>
+      <form id="contactForm" class="form" onsubmit="return sendEmail(event)">
+        <div class="grid">
+          <label>Full Name *
+            <input type="text" name="name" required placeholder="Your name"/>
+          </label>
+          <label>Company *
+            <input type="text" name="company" required placeholder="Company"/>
+          </label>
+        </div>
+        <div class="grid">
+          <label>Email *
+            <input type="email" name="email" required placeholder="you@example.com"/>
+          </label>
+          <label>Phone
+            <input type="tel" name="phone" placeholder="+1 (___) ___-____"/>
+          </label>
+        </div>
+
+        <label>Are you okay to support an O-1A visa (concurrent employment)? *
+          <div class="options">
+            <label><input type="radio" name="o1a" value="Yes" required/> Yes</label>
+            <label><input type="radio" name="o1a" value="No"/> No</label>
+          </div>
+        </label>
+
+        <label>Engagement type *
+          <div class="options">
+            <label><input type="radio" name="engagement"  value="C2C" required/> C2C</label>
+            <label><input type="radio" name="engagement" value="Full-time W2"/> Full-time (W-2)</label>
+            <label><input type="radio" name="engagement" value="Contract W2"/> Contract (W-2)</label>
+            <label><input type="radio" name="engagement" value="1099"/> 1099 contractor</label>
+          </div>
+        </label>
+
+        <div class="grid">
+          <label>Work mode *
+            <div class="options">
+              <label><input type="radio" name="workmode" value="Remote" required/> Remote</label>
+              <label><input type="radio" name="workmode" value="Hybrid"/> Hybrid</label>
+              <label><input type="radio" name="workmode" value="Onsite"/> Onsite</label>
+            </div>
+          </label>
+          <label>Onsite/Hybrid location
+            <input type="text" name="location" placeholder="City, State (if Hybrid/Onsite)"/>
+          </label>
+        </div>
+
+        <label>Desired start timeline
+          <div class="options">
+            <label><input type="radio" name="timeline" value="ASAP" checked/> ASAP</label>
+            <label><input type="radio" name="timeline" value="<30 days"/>&lt; 30 days</label>
+            <label><input type="radio" name="timeline" value="1–2 months"/> 1–2 months</label>
+            <label><input type="radio" name="timeline" value="3+ months"/> 3+ months</label>
+          </div>
+        </label>
+
+        <label>Compensation
+          <div class="options">
+            <label><input type="radio" name="compType" value="Hourly" checked/> Hourly</label>
+            <label><input type="radio" name="compType" value="Yearly"/> Yearly</label>
+          </div>
+        </label>
+        <div class="grid">
+          <label>Rate / Budget (USD) *
+            <input type="text" name="rate" placeholder="$80–$180/hr (negotiable)" required/>
+          </label>
+          <label>W-2 benefits covered (if w2-selected) ?
+            <div class="options">
+              <label><input type="radio" name="w2benefits" value="Yes"/> Yes</label>
+              <label><input type="radio" name="w2benefits" value="No"/> No</label>
+            </div>
+          </label>
+        </div>
+        <label>If benefits apply, select which (if W2-selected)
+          <div class="options multiline">
+            <label><input type="checkbox" name="benefits" value="Health Insurance"/> Health</label>
+            <label><input type="checkbox" name="benefits" value="401(k)"/> 401(k)</label>
+            <label><input type="checkbox" name="benefits" value="PTO"/> PTO</label>
+            <label><input type="checkbox" name="benefits" value="Other"/> Other</label>
+          </div>
+        </label>
+
+        <label>Your message
+          <textarea name="message" rows="6" placeholder="Tell me about your project, goals, stack, and timeline..." required></textarea>
+        </label>
+
+        <p class="small muted">
+          I can take intro calls and planning now. Delivery work begins after work authorization is in place. Premium processing typically yields a USCIS decision in ~2 weeks.
+        </p>
+
+        <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:8px">
+          <button type="button" class="btn" id="closeModalBtn2">Cancel</button>
+          <button class="btn primary" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const openers = ['openModalBtn','openModalBtn3'];
+    const overlay = document.getElementById('modalOverlay');
+    const closers = ['closeModalBtn','closeModalBtn2'];
+
+    openers.forEach(id=>{const el=document.getElementById(id); if(el) el.addEventListener('click',()=>{overlay.style.display='flex'; overlay.setAttribute('aria-hidden','false');});});
+    closers.forEach(id=>{const el=document.getElementById(id); if(el) el.addEventListener('click',()=>{overlay.style.display='none'; overlay.setAttribute('aria-hidden','true');});});
+    overlay.addEventListener('click',(e)=>{ if(e.target===overlay) {overlay.style.display='none'; overlay.setAttribute('aria-hidden','true');} });
+
+    function sendEmail(e){
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const data = new FormData(form);
+      const name = data.get('name') || '';
+      const company = data.get('company') || '';
+      const email = data.get('email') || '';
+      const phone = data.get('phone') || '';
+      const o1a = data.get('o1a') || '';
+      const engagement = data.get('engagement') || '';
+      const timeline = data.get('timeline') || '';
+      const message = data.get('message') || '';
+      const workmode = data.get('workmode') || '';
+      const location = data.get('location') || '';
+      const compType = data.get('compType') || '';
+      const rate = data.get('rate') || '';
+      const w2benefits = data.get('w2benefits') || '';
+      const benefits = Array.from(document.querySelectorAll('input[name="benefits"]:checked')).map(b=>b.value).join(', ') || 'N/A';
+
+      const subject = encodeURIComponent('Consulting Inquiry from ' + name);
+      const body = encodeURIComponent(
+`Name: ${name}
+Company: ${company}
+Email: ${email}
+Phone: ${phone}
+
+O-1A Support: ${o1a}
+Engagement Type: ${engagement}
+Start Timeline: ${timeline}
+
+Project Details:
+${message}
+
+Work Mode: ${workmode}
+Location: ${location}
+Compensation: ${compType}
+Rate/Budget: ${rate}
+W-2 Benefits Covered: ${w2benefits}
+Benefits Included: ${benefits}
+
+(Submitted via website contact form)`);
+
+      const mailto = 'mailto:vvaishnavi2021@outlook.com?subject=' + subject + '&body=' + body;
+      window.location.href = mailto;
+      return false;
+    }
+  </script>
+</body>
+</html>
